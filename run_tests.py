@@ -45,7 +45,7 @@ NOSE_ARGS = [
         #'--with-doctest',
         #'--doctest-extension=.doctest',
         #'--doctest-tests',
-        #'--with-coverage',
+        '--with-coverage',
         #'--enable-cover',
         #'--enable-audit',
         #'--extra-include=FuXi',

@@ -125,7 +125,15 @@ class Rule(object):
 
 def SetupRuleStore(n3Stream=None, additionalBuiltins=None, makeNetwork=False):
     """
-    Sets up a N3RuleStore, a Graph (that uses it as a store, and )
+    Sets up a N3RuleStore, a Graph (that uses it as a store), and optionally a ReteNetwork
+
+    :param n3Stream: An object suitable for parsing by ``rdflib.graph.Graph.parse``
+    :param additionalBuiltins: Builtins to be passed to the N3RuleStore
+    :param makeNetwork: indicates whether or not a network should be
+                        created and returned for you
+    :returns: Returns a tuple ``(ruleStore, ruleGraph)``.
+
+              If makeNetwork==True, returns ``(ruleStore, ruleGraph, reteNetwork)``
     """
     ruleStore = N3RuleStore(additionalBuiltins=additionalBuiltins)
     nsMgr = NamespaceManager(Graph(ruleStore))
