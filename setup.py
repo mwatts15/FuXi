@@ -37,7 +37,7 @@ def setup_python3():
 
 config = dict(
     name="FuXi",
-    version="1.4.2-dev",
+    version="1.4.2.dev",
     description="An OWL / N3-based in-memory, logic reasoning system for RDF",
     author="Chime Ogbuji",
     author_email="chimezie@gmail.com",
@@ -74,7 +74,8 @@ config = dict(
     license="Apache",
     keywords="python logic owl rdf dlp n3 rule reasoner",
     test_suite='nose.collector',
-    url="https://github.com/RDFLib/FuXi",
+    url="https://github.com/mwatts15/FuXi",
+    download_url='https://github.com/mwatts15/FuXi/archive/1.4.2-dev.zip',
     entry_points={
         'console_scripts': [
            'FuXi = FuXi.Rete.CommandLine:main',
