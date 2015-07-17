@@ -37,7 +37,7 @@ def setup_python3():
 
 config = dict(
     name="FuXi",
-    version="1.4",
+    version="1.4.2-dev",
     description="An OWL / N3-based in-memory, logic reasoning system for RDF",
     author="Chime Ogbuji",
     author_email="chimezie@gmail.com",
